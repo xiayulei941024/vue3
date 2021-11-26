@@ -1,0 +1,27 @@
+@mixin no-wrap($clamp)
+  @if $clamp > 1
+    overflow: hidden
+    text-overflow: ellipsis
+    display: -webkit-box
+    -webkit-line-clamp: $clamp
+    -webkit-box-orient: vertical
+    word-break: break-all
+  @else
+    overflow: hidden
+    text-overflow: ellipsis
+    white-space: nowrap
+    word-break: break-all
+@mixin container
+  background: #fff
+  box-shadow: 0 0 10px rgba(93, 139, 198, 0.05)
+  border-radius: 2px
+$main-color: #409eff
+$light-color: #66b1ff
+
+$btn-color: #2E7CF5
+$font-size-small: 18px
+$font-size-medium: 20px
+$font-size-large: 30px
+$font-link-color: #ffffff
+$font-small-color: #999999
+$font-family-source: Source Han Sans CN VF
